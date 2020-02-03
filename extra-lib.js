@@ -1,3 +1,3 @@
-export function run() {
+exports.run = () => {
   console.log('Hello World')
 }

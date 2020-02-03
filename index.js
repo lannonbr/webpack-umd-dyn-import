@@ -1,4 +1,6 @@
-export function doStuff() {
+exports.doStuff = () => {
   import('./extra-lib.js')
-    .then(lib => lib.run())
+    .then(lib => {
+      lib.default.run()
+    })
 }
